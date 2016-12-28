@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<a href="{% url 'index' %}">Back to item list</a>
+	<h3>Room {{ room.name|capfirst }}</h3>
+	<p> Room's temperature: {{ room.temp }} °C</p>
+	<p> Room's atmspheric pressure: {{ room.press }} bar</p>
+{% endblock %}
